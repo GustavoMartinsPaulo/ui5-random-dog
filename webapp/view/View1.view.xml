@@ -1,0 +1,25 @@
+<mvc:View controllerName="ovly.random-dog.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" busyIndicatorSize="Large" busy="false">
+					<content>
+						<Image width="100%" id="image-container" visible="false" />
+						<html:video autoplay="true" width="100%">
+							<html:source id="video-container" type="video/mp4" hidden="true">
+								
+							</html:source>
+						</html:video>
+					</content>
+					<footer>
+						<Bar>
+							<contentRight>
+								<Button text="Get Dog" press="onGetRandomDog()" type="Emphasized" />
+							</contentRight>
+						</Bar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
